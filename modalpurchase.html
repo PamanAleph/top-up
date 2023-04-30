@@ -1,0 +1,102 @@
+<!-- component -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<div id="app" class="h-screen bg-gray-100">
+  <!-- Modal trigger -->
+  <button 
+        @click="showModal = !showModal"
+        class="bg-red-500 hover:bg-red-600 focus:outline-none rounded-md px-6 py-3 mx-auto block text-white transition duration-500 ease-in-out mt-32">Purchase</button>
+  <!-- ./Modal trigger -->
+  <div class="flex items-center justify-center absolute h-screen top-0 left-0"></div>
+  <transition name="custom" enter-active-class="animate__animated animate__bounceInDown" leave-active-class="animate__animated animate__bounceOutUp">
+  <!-- Modal -->
+  <div v-if="showModal" class="w-11/12 lg:w-full max-w-3xl z-20 mx-auto bg-white flex flex-col relative self-center shadow-2xl rounded-md ">
+    <!-- Modal header -->
+    <div class="p-6 border-b-4 border-gray-200 text-lg font-bold text-indigo-400">Payment</div>
+    <!-- ./Modal header -->
+    
+    <!-- Modal body -->
+    <div class="p-6">
+        ini tempat qr    
+    </div>
+
+    <div class="flex justify-center text-gray-800 dark:text-white md:justify-start items-center space-x-4 py-4 border-b border-gray-200 w-full"></div>
+        <div class="p-6">
+            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 ">
+                <li>
+                    Email               :
+                </li>
+                <li>
+                    Transaction ID      :
+                </li>
+                <li>
+                    Order ID      :
+                </li>
+                <li>
+                    Price               :
+                </li>
+                <li>
+                    Payment Method
+                </li>
+                <li>
+                    Status :
+                </li>
+                <li>
+                    Expired Date :
+                </li>
+            </ul>
+        </div> 
+    <div class="flex justify-center text-gray-800 dark:text-white md:justify-start items-center space-x-4 py-4 border-b border-gray-200 w-full"></div>
+    
+    <div class="p-6">
+        <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 ">
+            <li>
+                Scan the QR code
+            </li>
+           <li>
+                Confirm the payment amount
+            </li>
+            <li>
+                Choose your payment method
+            </li>
+            <li>
+                Enter your PIN or password
+            </li>
+            <li>
+                 Wait for the confirmation
+            </li>
+            <li>
+                Keep the receipt
+            </li>
+         </ul>
+    </div>    
+    <!-- ./Modal body -->
+    
+    <!-- Modal footer -->
+    <div class="border-t-4 border-gray-200 p-6 flex justify-end">
+      <button @click="showModal = false" class="bg-green-400 hover:bg-green-500 focus:outline-none transition px-4 py-2 rounded-md text-white transition duration-500 ease-in-out">Close</button>
+    </div>
+    <!-- ./Modal footer -->
+  </div>
+  <!-- ./Modal -->
+  </transition>
+  
+  <transition name="custom" enter-active-class="animate__animated animate__fadeIn" leave-active-class="animate__animated animate__fadeOut">
+    <!-- Overlay -->
+    <div v-if="showModal" class="bg-gray-700 bg-opacity-50 fixed bottom-0 left-0 w-full h-full transition duration-500 ease-in-out transfom z-10"></div>
+    <!-- ./Overlay -->
+  </transition>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+var app = new Vue({
+  el: '#app',
+  data() {
+    return{
+      showModal: false,
+    }
+  }
+})
+</script>
