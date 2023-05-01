@@ -12,120 +12,131 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 </head>
-<body>
+<body class="overflow-x-hidden">
+  <!-- navbar -->
+  <nav class="flex justify-between bg-gray-900 text-white w-screen">
+    <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+      <a class="text-3xl font-bold font-heading" href="#">
+        <!-- <img class="h-9" src="logo.png" alt="logo"> --> Logo Here.
+      </a>
+      <!-- Nav Links -->
+      <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+        <li>
+          <a class="hover:text-gray-200" href="index.html">Home</a>
+        </li>
+      </ul>
+      <!-- Header Icons -->
+      <div class="hidden xl:flex items-center space-x-5 items-center">
+        <!-- Sign In  -->
+        <a class="flex items-center hover:text-gray-200" href="register.html">
+          <ion-icon name="log-in-outline" size ="large"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <!-- Responsive navbar -->
+    <a class="xl:hidden flex mr-6 items-center" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+      <span class="flex absolute -mt-5 ml-4">
+        <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
+      </span>
+    </a>
+    <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </a>
+  </nav>
   <!-- component -->
-  <section class="text-gray-700 body-font overflow-hidden bg-white">
+  <section class="text-yellow-700 body-font overflow-hidden bg-[#2D033B]">
     <div class="container px-5 py-10 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img alt="gameicon" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/President_University_Logo.png/270px-President_University_Logo.png">
+        
+        <img alt="gameicon" class="lg:w-1/2 w-full object-cover object-center rounded border border-yellow-200" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/President_University_Logo.png/270px-President_University_Logo.png">
+        
+        <!-- right side -->
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-          <h2 class="text-sm title-font text-gray-500 tracking-widest">MOBA</h2>
-          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Mobile Legends: Bang Bang</h1>
-          <p class="leading-relaxed">
+          <h2 class="text-sm font-medium title-font text-yellow-500 tracking-widest">MOBA</h2>
+          <h1 class="text-yellow-200 text-3xl title-font font-bold mb-1">Mobile Legends: Bang Bang</h1>
+          <p class="leading-relaxed text-gray-200 text-justify">
             Mobile Legends is a free-to-play MOBA game for mobile devices, featuring fast-paced 5v5 battles where players must work together to destroy the enemy team's base.
             With over 100 heroes to choose from, each with unique abilities and skills, players can experiment with different strategies and team 
             compositions. The game's competitive ranking system, regular updates, and events keep players engaged and coming back for more.        
             </p>
-            
+  
           <!-- pembatas   -->
-          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5"></div>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-yellow-200 mb-5"></div>
             
           <!-- items -->
-          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-yellow-200 mb-5">
             <div class="flex ml-6 items-center grid grid-cols-3 gap-6">
               <div class="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 shadow-xl">
                 <a class="block rounded-xl bg-white p-4 sm:p-2 lg:p-4" href="">
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 sm:text-xl">500 Diamonds</h3>
-                    <p class="mt-2 text-sm text-gray-500"> Rp50,000 </p>
+                    <h3 class="text-lg font-bold text-gray-800 sm:text-xl">500 Diamonds</h3>
+                    <p class="mt-2 text-sm font-semibold text-yellow-500"> Rp50,000 </p>
                   </div>
                 </a>
               </div>
               <div class="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 shadow-xl">
                 <a class="block rounded-xl bg-white p-4 sm:p-2 lg:p-4" href="">
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 sm:text-xl">1000 Diamonds</h3>
-                    <p class="mt-2 text-sm text-gray-500"> Rp50,000 </p>
+                    <h3 class="text-lg font-bold text-gray-800 sm:text-xl">1000 Diamonds</h3>
+                    <p class="mt-2 text-sm font-semibold text-yellow-500"> Rp50,000 </p>
                   </div>
                 </a>
               </div>
               <div class="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 shadow-xl">
                 <a class="block rounded-xl bg-white p-4 sm:p-2 lg:p-4" href="">
                   <div>
-                    <h3 class="text-lg font-bold text-gray-900 sm:text-xl">1500 Diamonds</h3>
-                    <p class="mt-2 text-sm text-gray-500"> Rp50,000 </p>
+                    <h3 class="text-lg font-bold text-gray-800 sm:text-xl">1500 Diamonds</h3>
+                    <p class="mt-2 text-sm font-semibold text-yellow-500"> Rp50,000 </p>
                   </div>
                 </a>
               </div>
             </div>
           </div>
 
-          <p class="mt-8 text-lg font-medium">Payment Methods</p>
-            <form class="mt-5 grid gap-6">
+          <p class="mt-8 text-lg font-medium text-yellow-200">Payment Methods</p>
+            <form class="mt-5 grid gap-6 text-gray-200">
               <!-- QRIS -->
               <div class="relative">
                 <input class="peer hidden" id="radio_1" type="radio" name="radio" checked />
-                <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
-                <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_1">
-                  <img class="w-14 object-contain" src="/images/naorrAeygcJzX0SyNI4Y0.png" alt="" />
+                <span class="peer-checked:border-yellow-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-yellow-300 bg-white"></span>
+                <label class="peer-checked:border-2 peer-checked:border-yellow-700 peer-checked:bg-yellow-50 peer-checked:text-gray-700 flex cursor-pointer select-none rounded-lg border border-yellow-300 p-4" for="radio_1">
                   <div class="ml-5">
                     <span class="mt-2 font-semibold">QRIS</span>
                   </div>
                 </label>
               </div>
-              <!-- MANDIRI -->
+              <!-- Alfamart -->
               <div class="relative">
                 <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
-                <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
-                <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-                  <img class="w-14 object-contain" src="/images/oG8xsl3xsOkwkMsrLGKM4.png" alt="" />
+                <span class="peer-checked:border-yellow-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-yellow-300 bg-white"></span>
+                <label class="peer-checked:border-2 peer-checked:border-yellow-700 peer-checked:bg-yellow-50 peer-checked:text-gray-700 flex cursor-pointer select-none rounded-lg border border-yellow-300 p-4" for="radio_2">
                   <div class="ml-5">
-                    <span class="mt-2 font-semibold">Livin Mandiri</span>
+                    <span class="mt-2 font-semibold">Alfamart</span>
                   </div>
                 </label>
               </div>
-              <!-- BCA -->
+              <!-- Indomart -->
               <div class="relative">
-                <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
-                <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
-                <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-                  <img class="w-14 object-contain" src="/images/oG8xsl3xsOkwkMsrLGKM4.png" alt="" />
+                <input class="peer hidden" id="radio_3" type="radio" name="radio" checked />
+                <span class="peer-checked:border-yellow-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-yellow-300 bg-white"></span>
+                <label class="peer-checked:border-2 peer-checked:border-yellow-700 peer-checked:bg-yellow-50 peer-checked:text-gray-700 flex cursor-pointer select-none rounded-lg border border-yellow-300 p-4" for="radio_3">
                   <div class="ml-5">
-                    <span class="mt-2 font-semibold">BCA Mobile</span>
-                  </div>
-                </label>
-              </div>
-              <div class="relative">
-                <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
-                <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
-                <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-                  <img class="w-14 object-contain" src="/images/oG8xsl3xsOkwkMsrLGKM4.png" alt="" />
-                  <div class="ml-5">
-                    <span class="mt-2 font-semibold">BCA Mobile</span>
-                  </div>
-                </label>
-              </div>
-              <div class="relative">
-                <input class="peer hidden" id="radio_2" type="radio" name="radio" checked />
-                <span class="peer-checked:border-gray-700 absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white"></span>
-                <label class="peer-checked:border-2 peer-checked:border-gray-700 peer-checked:bg-gray-50 flex cursor-pointer select-none rounded-lg border border-gray-300 p-4" for="radio_2">
-                  <img class="w-14 object-contain" src="/images/oG8xsl3xsOkwkMsrLGKM4.png" alt="" />
-                  <div class="ml-5">
-                    <span class="mt-2 font-semibold">BCA Mobile</span>
+                    <span class="mt-2 font-semibold">Indomart</span>
                   </div>
                 </label>
               </div>
             </form>
-            <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5"></div>
+            <div class="flex mt-6 items-center pb-5 border-b-2 border-yellow-200 mb-5"></div>
             <!-- harga -->
           <div class="flex pt-3">
-            <span class="title-font font-medium text-2xl text-gray-900">$58.00</span>
+            <span class="title-font font-medium text-2xl text-gray-200">$58.00</span>
             <button class="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Purchase</button>
-            <button class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 hover:text-red-500 ml-4">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
