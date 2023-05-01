@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body class="antialiased bg-[#2D033B] overflow-x-hidden">
+    <!-- navbar -->
+    <nav class="flex justify-between bg-gray-900 text-white w-screen">
+      <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+        <a class="text-3xl font-bold font-heading" href="#">
+          <!-- <img class="h-9" src="logo.png" alt="logo"> --> Logo Here.
+        </a>
+        <!-- Nav Links -->
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+          <li>
+            <a class="hover:text-gray-200" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-200" href="register.html">Register</a>
+          </li>
+        </ul>
+        <!-- Header Icons -->
+        <div class="hidden xl:flex items-center space-x-5 items-center">
+          <a class="hover:text-gray-200" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </a>
+          <a class="flex items-center hover:text-gray-200" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
+            </span>
+          </a>
+          <!-- Sign In / Register      -->
+          <a class="flex items-center hover:text-gray-200" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Responsive navbar -->
+      <a class="xl:hidden flex mr-6 items-center" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+        <span class="flex absolute -mt-5 ml-4">
+          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
+        </span>
+      </a>
+      <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+    </nav>
+
+    <!-- team section -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-16 py-16">
+
+        <card class="group relative block bg-black col-span-1 animate__animated animate__pulse animate__delay-1s">
+          <img alt="Developer" src="img/cowo1.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+          <div class="relative p-4 sm:p-6 lg:p-8">
+            <p class="text-sm font-medium uppercase tracking-widest text-pink-500"> Developer </p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Muhammad Alief Firmanda</p>
+            <div class="mt-32 sm:mt-48 lg:mt-64">
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p class="text-sm text-white"> Student ID : 001202200023 </p>
+              </div>
+            </div>
+          </div>
+        </card>
+
+        <card class="group relative block bg-black col-span-1 animate__animated animate__pulse animate__delay-1s">
+          <img alt="Developer" src="img/cowo2.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+          <div class="relative p-4 sm:p-6 lg:p-8">
+            <p class="text-sm font-medium uppercase tracking-widest text-pink-500"> Developer </p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Yudhistira Fauzi Achmadarel</p>
+            <div class="mt-32 sm:mt-48 lg:mt-64">
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p class="text-sm text-white"> Student ID : 001202200023 </p>
+              </div>
+            </div>
+          </div>
+        </card>
+
+        <card class="group relative block bg-black col-span-1 animate__animated animate__pulse animate__delay-1s">
+          <img alt="Developer" src="img/cowo3.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+          <div class="relative p-4 sm:p-6 lg:p-8">
+            <p class="text-sm font-medium uppercase tracking-widest text-pink-500"> Developer </p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Wardana</p>
+            <div class="mt-32 sm:mt-48 lg:mt-64">
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p class="text-sm text-white"> Student ID : 001202200023 </p>
+              </div>
+            </div>
+          </div>
+        </card>
+
+        <card class="group relative block bg-black col-span-1 animate__animated animate__pulse animate__delay-2s">
+          <img alt="uiux" src="img/cewe1.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+          <div class="relative p-4 sm:p-6 lg:p-8">
+            <p class="text-sm font-medium uppercase tracking-widest text-pink-500"> UI/UX </p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Jelita Tri Darmastuti</p>
+            <div class="mt-32 sm:mt-48 lg:mt-64">
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p class="text-sm text-white"> Student ID : 001202200023 </p>
+              </div>
+            </div>
+          </div>
+        </card>
+
+        <card class="group relative block bg-black col-span-1 animate__animated animate__pulse animate__delay-2s">
+          <img alt="uiux" src="img/cewe2.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+          <div class="relative p-4 sm:p-6 lg:p-8">
+            <p class="text-sm font-medium uppercase tracking-widest text-pink-500"> UI/UX </p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Raulina Ravenska Sirait</p>
+            <div class="mt-32 sm:mt-48 lg:mt-64">
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p class="text-sm text-white"> Student ID : 001202200023 </p>
+              </div>
+            </div>
+          </div>
+        </card>
+
+        <card class="group relative block bg-black col-span-1 animate__animated animate__pulse animate__delay-2s">
+          <img alt="uiux" src="img/cewe3.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+          <div class="relative p-4 sm:p-6 lg:p-8">
+            <p class="text-sm font-medium uppercase tracking-widest text-pink-500"> UI/UX </p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Natalia Desy Putri</p>
+            <div class="mt-32 sm:mt-48 lg:mt-64">
+              <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p class="text-sm text-white"> Student ID : </p>
+              </div>
+            </div>
+          </div>
+        </card>
+      </div>
+      
+    <!-- footer -->
+<footer aria-label="Site Footer" class="lg:pt-16">
+    <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-md">
+        <strong class="block text-center text-xl font-bold text-gray-200 sm:text-3xl"> Want us to email you with the latest blockbuster news? </strong>
+        <form class="mt-6">
+          <div class="relative max-w-lg">
+            <label class="sr-only" for="email"> Email </label>
+            <input class="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium" id="email" type="email" placeholder="youremail@domain" />
+            <button class="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-[#C69749] px-5 py-3 text-sm font-medium text-gray-200 transition hover:bg-yellow-600"> Subscribe </button>
+          </div>
+        </form>
+      </div>
+      <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
+        <div class="mx-auto max-w-sm lg:max-w-none">
+          <p class="mt-4 text-center text-gray-200 lg:text-justify lg:text-lg"> 
+            At [website name], we are committed to providing you with easy and reliable top-up services, so you can stay connected wherever you go. Trust us for fast, secure, and hassle-free top-ups every time. </p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+          <div>
+            <strong class="font-medium text-yellow-200"> About </strong>
+            <nav aria-label="Footer About Nav" class="mt-6 flex flex-col space-y-1">
+              <a class="text-gray-200 transition hover:text-gray-200/75" href="/"> About Us</a>
+              <a class="text-gray-200 transition hover:text-gray-200/75" href="ourteam.html"> Our Team </a>
+            </nav>
+          </div>
+          <div>
+            <strong class="font-medium text-yellow-200"> Support </strong>
+            <nav aria-label="Footer Support Nav" class="mt-6 flex flex-col space-y-1">
+              <a class="text-gray-200 transition hover:text-gray-200/75" href="/"> Terms and Conditions </a>
+              <a class="text-gray-200 transition hover:text-gray-200/75" href="/"> Privacy and Policy </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 border-t border-gray-100 pt-8">
+        <p class="text-center text-xs/relaxed text-gray-500"> © Final Project SSIP 2023. All rights reserved. <br /> Created With Love</a> </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

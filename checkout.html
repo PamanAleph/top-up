@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+</head>
+<body class="bg-[#2D033B]">
+    <div class="py-14 px-4 md:px-6 2xl:px-20 2xl:container 2xl:mx-auto">
+        <div class="flex justify-start item-start space-y-2 flex-col">
+            <h1 class="text-3xl dark:text-white lg:text-4xl font-semibold leading-7 lg:leading-9 text-gray-800">Disini Order ID</h1>
+            <p class="text-base dark:text-gray-300 font-medium leading-6 text-gray-600">Tanggal dan Waktu</p>
+        </div> 
+        <div class="mt-10 flex flex-col xl:flex-row jusitfy-center items-stretch w-full xl:space-x-8 space-y-4 md:space-y-6 xl:space-y-0">
+            <div class="flex flex-col justify-start items-start w-full space-y-4 md:space-y-6 xl:space-y-8">
+                <div class="flex flex-col justify-start items-start dark:bg-gray-800 bg-gray-50 px-4 py-4 md:py-6 md:p-6 xl:p-8 w-full">
+                    <p class="text-lg md:text-xl dark:text-white font-semibold leading-6 xl:leading-5 text-gray-800">Payment Site</p>
+                    <div class="mt-4 md:mt-6 flex flex-col md:flex-row justify-start items-start md:items-center md:space-x-6 xl:space-x-8 w-full">                                                
+                        <div class="border-b border-gray-200 md:flex-row flex-col flex justify-between items-start w-full pb-8 space-y-4 md:space-y-0">
+
+                            <div class="w-full flex flex-col justify-start items-start space-y-8">
+                                <h3 class="text-xl dark:text-white xl:text-2xl font-semibold leading-6 text-gray-800">Method</h3>
+                                <div class="pb-4 md:pb-8 w-full md:w-40">
+                                    <img class="w-full hidden md:block" src="img/qris.svg" alt="qris" />
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-col justify-start items-start space-y-8">
+                                <h3 class="text-xl dark:text-white xl:text-2xl font-semibold leading-6 text-gray-800">Nama Produk yang dibeli</h3>
+                                <div class="flex justify-start items-start flex-col space-y-2">
+                                    <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-800">Email: </span> Italic Minimal Design</p>
+                                    <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-800">Order ID : </span> Small</p>
+                                    <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-800">Transaction ID: </span> Light Blue</p>
+                                    <p class="text-sm dark:text-white leading-none text-gray-800"><span class="dark:text-gray-400 text-gray-800">Price: </span> Light Blue</p>
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-col justify-start items-start space-y-8">
+                                <div class="pb-4 md:pb-8 w-full md:w-40 ">
+                                    <img class="w-full hidden md:block" src="img/qrcode.svg" alt="qrcode" />
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 w-full xl:w-96 flex justify-between items-center md:items-start px-4 py-6 md:p-6 xl:p-8 flex-col">
+                <h3 class="text-xl dark:text-white font-semibold leading-5 text-gray-800">Payment Instruction</h3>
+                <div class="flex flex-col md:flex-row xl:flex-col justify-start items-stretch h-full w-full md:space-x-6 lg:space-x-8 xl:space-x-0">
+                    
+                    <!-- batas -->
+                    <div class="flex justify-center text-gray-800 dark:text-white md:justify-start items-center space-x-4 py-4 border-b border-gray-200 w-full"></div>
+                    <!-- end -->
+
+                    <div class="flex flex-col justify-start items-start flex-shrink-0 mt-4">
+                        <!-- Instruction -->
+                        <div class="flex justify-between xl:h-full items-stretch w-full flex-col mt-6 md:mt-0">
+                            <div class="text-justify flex justify-center md:justify-start xl:flex-col flex-col md:space-x-6 lg:space-x-8 xl:space-x-0 space-y-4 xl:space-y-12 md:space-y-0 md:flex-row items-center md:items-start">
+                                <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 ">
+                                    <li>
+                                        Scan the QR code
+                                    </li>
+                                    <li>
+                                        Confirm the payment amount
+                                    </li>
+                                    <li>
+                                        Choose your payment method
+                                    </li>
+                                    <li>
+                                        Enter your PIN or password
+                                    </li>
+                                    <li>
+                                        Wait for the confirmation
+                                    </li>
+                                    <li>
+                                        Keep the receipt
+                                    </li>
+                                </ul>
+                            </div>
+                    <div class="flex justify-between xl:h-full items-stretch w-full flex-col mt-6 md:mt-0">
+                        <div class="flex justify-center md:justify-start xl:flex-col flex-col md:space-x-6 lg:space-x-8 xl:space-x-0 space-y-4 xl:space-y-12 md:space-y-0 md:flex-row items-center md:items-start">
+                            <div class="flex justify-center md:justify-start items-center md:items-start flex-col space-y-4 xl:mt-8">
+                                <p class="text-base dark:text-white font-semibold leading-4 text-center md:text-left text-gray-800">Have a Problem ? Email To :</p>
+                                <div class="flex justify-center text-gray-800 dark:text-white md:justify-start items-center space-x-4 py-4 border-b border-gray-200 w-full">
+                                    <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/order-summary-3-svg1.svg" alt="email">
+                                    <img class="hidden dark:block" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/order-summary-3-svg1dark.svg" alt="email">
+                                    <p class="cursor-pointer text-sm leading-5 ">topupgame@ssip.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
